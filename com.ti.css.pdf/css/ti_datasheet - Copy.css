@@ -1,0 +1,828 @@
+
+
+@media print {
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+}
+
+body{
+	font-family: MinionPro-Regular;
+	font-size: 10pt;
+	width: 7.0in;
+/*	column-count: 2;
+	column-fill: auto;
+    column-gap: .25in; */
+}
+
+.2-column{
+	width: 3.25in;
+	column-count: 2;
+	column-fill: auto;
+    column-gap: .25in; 
+	vertical-align: top;
+}
+
+
+
+/***************************************************
+ * Intralox Base Page
+ ***************************************************/
+ 
+
+
+table .fn{
+   float: footnote;
+   font-family: HelveticaNeueLTPro-Cn;
+   font-size: 7pt;
+}
+
+
+*[class~="table/fn"] {
+	counter-increment: footnote;
+	
+}
+
+*[class~="topic/fn"]::footnote-call {
+	font-size: 83%;
+	vertical-align: super;
+}
+
+@page {
+  size: 8.25in 11in;
+  margin-top: .75in;
+  margin-bottom: .75in;
+  margin-left: .625in;
+  margin-right: .625in;
+
+
+  
+  
+  @top-left {
+    content: "";
+  }
+ 	@bottom-left {
+    content: "";
+  }
+  
+  	@bottom-right {
+    content: "";
+  }
+  
+  
+}
+
+.front-cover-copyright{
+	position: fixed;
+	bottom: 80pt;
+	right: -60pt;
+	font-family: HelveticaNeueLTPro-Lt;
+	font-size: 7pt ;
+	-ah-transform: rotate(-90deg); 
+}
+
+.cover-page-logo{
+	background-image: url('images/Iloxproc.svg');
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 150px 200px;
+
+}
+.cover-page-addresses{
+	border-top: 2pt solid #006EC7;
+	position: fixed;
+	padding-top: 10pt;
+	bottom: -50pt;
+	width: 7in;
+
+
+}
+
+.cover-page-addresses p{
+	font-family: HelveticaNeueLTPro-Lt;
+	font-size: 6pt !important;
+	text-align: left;
+	line-height: 10pt;
+
+}
+
+.cover-page-addresses b{
+	font-family: HelveticaNeueLTPro-Hv;
+	font-size: 6pt !important;
+	text-align: left;
+	line-height: 10pt;
+}
+
+
+
+@page :left {
+  margin-left: .625in;
+  margin-right: .625in;
+  margin-top: .75in;
+  margin-bottom: .25in;
+
+  @top-center {
+    content: "Product Line Extension";
+    /*margin: 0pt -320pt 30pt 20pt; */
+	height: 30pt;
+    font-size: 24pt;
+	color: white;
+    background-color: #006EC7;
+    text-align: center;
+	padding: 5pt 10pt 5pt 10pt;
+	border-radius: 0px 0px 10px 10px;
+	font-family: HelveticaNeueLTPro-Hv;
+	font-weight: bold;
+  }
+ 
+    @top-left {
+		
+    content: "";
+
+  }
+  
+  @left-middle{
+	content: "";
+  }
+  
+  @left-bottom{
+	content: ""  
+  }
+  
+  @bottom-left {
+    content: "";
+	border: none;
+  }
+  @bottom-right {
+    content: "";
+	border: none;
+  }
+  @bottom-center {
+    content: "";
+	border: none;
+  }
+
+}
+
+
+@page :right {
+	margin-left: .625in;
+	margin-right: .625in;
+    margin-top: .75in;
+	margin-bottom: .25in;
+
+  @top-center:lang(EN) {
+    content: "Product Line Extension";
+   /* margin: 0pt 20pt 30pt -320pt; */
+	height: 30pt;
+    font-size: 24pt;
+	color: white;
+    text-align: center;
+	padding: 5pt 10pt 5pt 10pt;
+    background-color: #006EC7;
+	border-radius: 0px 0px 10px 10px;
+	font-family: HelveticaNeueLTPro-Hv;
+  }
+    @top-right {
+		content: "";
+  }
+  @right-middle{
+	content: "";
+  }
+     
+  @right-bottom{	
+	content: "";	  
+  }
+  
+  @bottom-left {
+    content: "";
+	border: none;
+  }
+  @bottom-right {
+    content: "";
+	border: none;
+  }
+  @bottom-center {
+    content: "";
+	border: none;
+  }
+
+}
+
+
+
+@page :first {
+	margin-left: .625in;
+	margin-right: .625in;
+    margin-top: .75in;
+	margin-bottom: .75in;
+  	@footnote{
+		margin-bottom: .25in;
+	}
+  @top-center:lang(EN) {
+    content: "Product Line Extension";
+   /* margin: 0pt 20pt 30pt -320pt; */
+	height: 30pt;
+    font-size: 24pt;
+	color: white;
+    text-align: center;
+	padding: 5pt 10pt 5pt 10pt;
+    background-color: #006EC7;
+	border-radius: 0px 0px 10px 10px;
+	font-family: HelveticaNeueLTPro-Hv;
+  }
+    @top-right {
+		content: "";
+  }
+  @right-middle{
+	content: "";
+  }
+     
+  @right-bottom{	
+	content: "";	  
+  }
+  
+  @bottom-left {
+    content: "";
+	border: none;
+  }
+  @bottom-right {
+    content: "";
+	border: none;
+  }
+  @bottom-center {
+    content: "";
+	border: none;
+  }
+
+}
+
+
+
+
+/***************************************************
+ * Intralox Topic Headings
+ ***************************************************/
+
+h1.topictitle1{
+	font-family: HelveticaNeueLTPro-Hv;
+	margin-top: -10pt;
+	margin-bottom: -10pt;
+	column-span: all;
+	width: 7.0in;
+	font-size: 18pt;
+	text-align: center;
+	string-set: chaptitle content();
+}
+
+
+
+.topictitle2{
+/*	font-family: HelveticaNeueLTPro-Bd;
+	text-decoration: none;
+	column-span: all;
+	margin-bottom: -2pt;
+	width: 7.0in;
+	font-size: 18pt;
+	text-align: center;
+*/
+	display: none;
+}
+
+.topictitle3, .topictitle4{
+	font-family: HelveticaNeueLTPro-Bd;
+	margin-bottom: 10pt;
+	margin-top: -2pt;
+	text-decoration: none;
+	width: 3.5in;
+	font-size: 10pt;
+	text-align: left;
+}
+
+.sectiontitle{
+	font-family: HelveticaNeueLTPro-Bd;
+	margin-bottom: 10pt;
+	margin-top: -2pt;
+	text-decoration: none;
+	width: 3.5in;
+	font-size: 10pt;
+	text-align: left;
+}
+
+
+.pagetop{
+	margin-top: -4pt;
+	
+}
+
+
+/***************************************************
+ * Intralox Tables
+ ***************************************************/
+
+ 
+table, th, td{
+	border: none;
+}
+
+table .tbody .entry{
+	font-family: HelveticaNeueLTPro-Roman;
+	font-size: 8pt;
+}
+
+table .thead .entry{
+	font-family: HelveticaNeueLTPro-Bd;
+	font-size: 8pt;
+}
+
+table .tbody .entry p{
+	font-family: HelveticaNeueLTPro-Roman;
+	font-size: 10pt;
+}
+
+table .tbody .entry strong{
+	font-family: HelveticaNeueLTPro-Bd;
+	font-size: 8pt;
+}
+
+.cell_rotate{
+	 -ah-transform: rotate(-90deg); 
+}
+ 
+ /***************************************************
+ * Intralox graphic table styling
+ ***************************************************/
+
+.graph_table{
+	border: .5pt solid #000000;
+	width: 3.5in;
+	table-layout: fixed;
+	padding-top: 10pt;
+	margin-left: -3pt;
+	margin-bottom: 10pt;
+}
+ 
+.graph_table .tbody .entry{
+	font-family: HelveticaNeueLTPro-Roman;
+	font-size: 8pt;
+
+	
+}
+
+.graph_table .tbody .entry strong{
+	font-family: HelveticaNeueLTPro-Bd;
+	font-size: 8pt;
+	
+}
+
+
+.graph_table .tbody .entry p{
+	font-family: HelveticaNeueLTPro-Roman;
+	font-size: 8pt;
+	padding-top: 10pt;
+	
+}
+
+
+/***************************************************
+ * Intralox basic table 8pt styling
+ ***************************************************/
+
+
+ 
+  table.no_cell_border td{
+	 border: none !important;
+ }
+ 
+
+ 
+.basic_table_8pt{
+	border: .5pt solid #000000;
+	table-layout: fixed;	
+	margin-bottom: 20pt;
+    padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.basic_table_8pt .thead .entry{
+	border: .5pt solid #000000;
+	background-color: #d3d3d3;		
+    padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.basic_table_8pt .thead .entry{
+	font-family: HelveticaNeueLTPro-BdCn;
+	line-height: 10pt;
+	font-size: 7pt;	
+    padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.basic_table_8pt .tbody .entry{
+	border: .5pt solid #000000;
+	font-family: HelveticaNeueLTPro-Roman;
+	font-size: 7pt;
+    padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.basic_table_8pt .tbody .entry .image{
+    padding-top: 1px;
+
+}
+
+.basic_table_8pt .tbody .entry p{
+	font-family: HelveticaNeueLTPro-Roman;
+	margin-top: 3pt;
+	font-size: 7pt;
+}
+
+.basic_table_8pt .tbody .entry strong{
+	font-family: HelveticaNeueLTPro-BdCn;
+	font-size: 7pt;
+}
+
+.bold_outer_border{
+		border: 2pt solid #000000;
+}
+
+.bold_outer_border .thead .entry{
+	font-family: HelveticaNeueLTPro-Hv;
+	font-size: 10pt;
+	padding-top: 1px;
+	padding-bottom: 1px;
+
+}
+
+/***************************************************
+ * Intralox basic table 9pt styling
+ ***************************************************/
+
+ 
+.basic_table_9pt{
+	border: .5pt solid #000000;
+	table-layout: fixed;	
+	margin-bottom: 20pt;
+    padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.basic_table_9pt .thead .entry{
+	border: .5pt solid #000000;
+	background-color: #d3d3d3;	
+	font-family: HelveticaNeueLTPro-Bd;
+	font-size: 9pt;	
+    padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.basic_table_9pt .thead .entry strong{
+	font-family: HelveticaNeueLTPro-Bd;
+	font-size: 9pt;	
+}
+
+.basic_table_9pt .tbody .entry{
+	border: .5pt solid #000000;
+	font-family: HelveticaNeueLTPro-Roman;
+	font-size: 9pt;
+    padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+
+
+/***************************************************
+ * Intralox belt style table
+ ***************************************************/
+
+ 
+.belt_style{
+	border: 2pt solid #000000;
+	table-layout: fixed;	
+	width: 7.0in;
+	margin-bottom: 10pt;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.belt_style .thead .entry{
+	border: .5pt solid #000000;
+	background-color: #d3d3d3;		
+}
+
+.belt_style .thead .entry{
+	font-family: HelveticaNeueLTPro-Hv;
+	font-size: 14pt;
+	padding-top: 1px;	
+	padding-bottom: 0px;
+}
+
+.belt_style .tbody .entry{
+	border: .5pt solid #000000;
+	font-family: HelveticaNeueLTPro-Roman;
+	font-size: 9pt;
+	padding-top: 1px;
+	padding-bottom: 0px;
+}
+
+.belt_style .tbody .entry p{
+	font-family: HelveticaNeueLTPro-Roman;
+	font-size: 9pt;
+	
+}
+
+.belt_style .tbody .entry strong{
+	font-family: HelveticaNeueLTPro-Hv;
+	font-size: 14pt;
+}
+
+.belt_style .tbody .entry ul{
+	font-family: HelveticaNeueLTPro-Roman;
+	text-align: left;
+	margin-left: -12pt;
+	font-size: 9pt;
+	margin-top: 0px;
+}
+
+.belt_style .tbody .entry ul strong{
+	font-family: HelveticaNeueLTPro-Bd;
+	text-align: left;
+	font-size: 9pt;
+}
+
+.belt_style .tbody .entry ul li{
+	font-family: HelveticaNeueLTPro-Roman;
+	font-size: 9pt;
+
+}
+
+.belt_style .tbody .entry image{
+	padding-top: 1px;
+}
+
+
+/***************************************************
+ * Intralox belt data table
+ ***************************************************/
+
+ 
+.belt_data{
+	border: 2pt solid #000000;
+	table-layout: fixed;	
+	width: 7.0in;
+	margin-bottom: 10pt;
+    padding-top: 0px;
+	padding-bottom: 0px;
+	break-after: always;
+}
+
+.belt_data .thead .entry{
+	font-family: HelveticaNeueLTPro-Hv;
+	border: .5pt solid #000000;
+	background-color: #d3d3d3;		
+	margin-top: -1pt;
+    padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+
+.belt_data .tbody .entry{
+	border: .5pt solid #000000;
+	font-family: HelveticaNeueLTPro-Roman;
+	font-size: 8pt;
+	margin-top: -1pt;
+    padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.belt_data .tbody .entry p{
+	font-family: HelveticaNeueLTPro-Roman;
+	margin-top: 3pt;
+	font-size: 8pt;
+}
+
+.belt_data .tbody .entry strong{
+	font-family: HelveticaNeueLTPro-Bd;
+	font-size: 8pt;
+}
+
+
+
+/***************************************************
+ * Intralox sprocket table
+ ***************************************************/
+
+ 
+.sprocket_table{
+	border: 2pt solid #000000;
+	table-layout: fixed;	
+	width: 7.0in;
+	margin-bottom: 10pt;
+    padding-top: 0px;
+	padding-bottom: 1px;
+}
+
+.sprocket_table .thead .entry{
+	border: .5pt solid #000000;
+	background-color: #d3d3d3;	
+    padding-top: 0px;
+	padding-bottom: 1px;	
+}
+
+.sprocket_table .thead .entry{
+	font-family: HelveticaNeueLTPro-Hv;
+	font-size: 10pt;	
+}
+
+.sprocket_table .tbody .entry{
+	border: .5pt solid #000000;
+	font-family: HelveticaNeueLTPro-Roman;
+	font-size: 8pt;
+    padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.sprocket_table .tbody .entry p{
+	font-family: HelveticaNeueLTPro-Roman;
+	margin-top: 3pt;
+	font-size: 8pt;
+}
+
+.sprocket_table .tbody .entry strong{
+	font-family: HelveticaNeueLTPro-Hv;
+	font-size: 8pt;
+}
+
+
+/***************************************************
+ * Sprocket support graphic table styling
+ ***************************************************/
+
+.sprocket_Support_table{
+	border: .5pt solid #000000;
+	table-layout: fixed;
+	padding-top: 10pt;
+	margin-left: -3pt;
+	margin-bottom: 10pt;
+}
+ 
+.sprocket_Support_table .tbody *{
+	font-family: HelveticaNeueLTPro-Roman;
+	font-size: 8pt;
+
+	
+}
+
+.sprocket_Support_table .tbody .entry strong{
+	font-family: HelveticaNeueLTPro-Bd;
+	font-size: 8pt;
+	
+}
+
+
+/***************************************************
+ * Intralox accessories table
+ ***************************************************/
+
+
+.accessory_table{
+	border: 2pt solid #000000;
+	table-layout: fixed;	
+	width: 7.0in;
+	margin-bottom: 10pt;
+    padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.accessory_table{
+	border: 2pt solid #000000;	
+}
+
+.accessory_table .thead .entry{
+	font-family: HelveticaNeueLTPro-Hv;
+	font-size: 10pt;	
+    padding-top: 0px;
+	padding-bottom: 0px;
+	background-color: #d3d3d3;	
+}
+
+.accessory_table .tbody .entry{
+	border: .5pt solid #000000;
+	font-family: HelveticaNeueLTPro-Roman;
+	font-size: 8pt;
+    padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.accessory_table .tbody .entry p{
+	font-family: HelveticaNeueLTPro-Roman;
+	margin-top: 3pt;
+	font-size: 7pt;
+}
+
+.accessory_table, .accessories_table .tbody .entry strong{
+	font-family: HelveticaNeueLTPro-Hv;
+	font-size: 7pt;
+}
+
+
+
+
+
+/***************************************************
+ * Intralox utility classes for page-break, toc-only
+ ***************************************************/
+
+.fig{
+	display: table;
+	margin-bottom: 20pt;
+}
+
+.fig > .image{
+	width: 3.0in;
+}
+
+
+.figcap{
+	display: table-caption;
+	caption-side: bottom;	
+}
+
+.intralox-series .topictitle4{
+	display: none;
+}
+
+.tablecap{
+	display: none;
+}
+
+.hidden{
+	display: none;
+}
+
+/***************************************************************
+ * Intralox utility classes for page-wide, page-break, toc-only
+ ***************************************************************/
+
+
+.page-wide{
+	table-layout: fixed;
+	column-span: all;
+	width: 7.0in;
+}
+
+.page-break {
+  page-break-after: always;
+}
+
+.new-page{
+	page-break-before: always;
+}
+
+
+.reference{
+	column-span: all;
+	width: 7.00in;
+}
+
+.reference .table{
+	table-layout: fixed;
+	column-span: all;
+	width: 7.0in;
+}
+
+strong{
+	font-family: HelveticaNeueLTPro-Bd;
+}
+
+p{
+	margin-top: -10pt;
+}
+
+.b{
+	font-family: HelveticaNeueLTPro-Bd;
+}
+
+/*
+.fn {
+ display: none;
+
+}
+*/
+.conbody .ul{
+	margin-top: -10pt;
+	margin-left: -15pt;
+}
+
+.conbody .ol{
+	margin-left: -15pt;
+}
+
+
+
+.notetitle{
+	font-family: HelveticaNeueLTPro-Bd;
+}

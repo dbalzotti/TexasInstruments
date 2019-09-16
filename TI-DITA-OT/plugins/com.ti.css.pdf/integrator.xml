@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<target name="dita2ti-css-pdf" depends="dita2ti-css-pdf.init, dita2pdf-css-page.init,
+                                              map2pdf-css-page.merged,
+                                              topic2pdf-css-page.init, map2pdf-css-page.init,
+                                              pdf-css-page.dita2html,
+                                              prepare.common.css, ti.prepare.custom.files, prepare.common.javascript,
+                                              run.antennahouse, run.prince, run.pdfreactor, run.vivliostyle"/>
+	<target name="dita2ti-css-pdf.init">
+		<property name="xsl.file" value="${dita.plugin.com.ti.css.pdf.dir}${file.separator}xsl${file.separator}overrides.xsl"/>
+		<property name="rocks.xml.pdf.css.page" value="true"/>
+		<!-- Get the input directory for use in looking up .met side-files
+			 from the XSLT -->
+		<dirname property="args.input.dir" file="${args.input}"/>
+		<makeurl property="user.input.dir.url" file="${args.input.dir}"/>
+		<property name="args.debug" value="yes"/>
+		
+	</target>
+	
+	<target name="ti.prepare.custom.files">
+	   
+	   <copy todir="${dita.temp.dir}/images">
+		  <fileset dir="${dita.plugin.com.ti.css.pdf.dir}${file.separator}images">
+			<include name="/*.png"/>
+			<include name="/*.gif"/>
+			<include name="/*.svg"/>
+		  </fileset>
+		</copy>
+		
+	   <copy todir="${dita.temp.dir}">
+		  <fileset dir="${dita.plugin.com.ti.css.pdf.dir}${file.separator}css">
+			<include name="/*.css"/>
+		  </fileset>
+		</copy>
+		
+	  <!--property name="screen_engineering_style.css.file"
+				  value="${dita.plugin.com.ti.ti.css.pdf.dir}${file.separator}css${file.separator}screen_engineering_style.css"/>
+
+	   <copy file="${screen_engineering_style.css.file}" todir="${dita.temp.dir}"/>
+
+	   <property name="press_engineering_style.css.file"
+				  value="${dita.plugin.com.ti.ti.css.pdf.dir}${file.separator}css${file.separator}press_engineering_style.css"/>
+
+	   <copy file="${press_engineering_style.css.file}" todir="${dita.temp.dir}"/-->
+
+	</target>
+
+</project>
