@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xml:space="preserve"
+	width="1026.66666666667"
+	height="376"
+   viewBox="0 0 1026.66666666667 376"
+   id="DQF_WSON-8">
+	
+<script type="application/javascript"> <![CDATA[
+
+
+]]> </script>
+
+<defs id="defs3078">
+
+	<style
+   		type="text/css"
+   		id="style5080">
+   
+    	@font-face { font-family:'Arial';src:url('#FontID0') format(svg)}
+    	.str0 {stroke:black;stroke-width:1;stroke-linecap:round;stroke-linejoin:round}
+    	.str1 {stroke:black;stroke-width:1;stroke-linecap:round;stroke-linejoin:round}
+
+    	.pin_name_font {font-weight:normal;font-size:9px;font-family:'Arial'}
+    	.header_font {font-weight:normal;font-size:9px;font-family:'Arial'}
+		.thermal_pad_font {font-weight:normal;font-size:9px;font-family:'Arial'}
+		
+		div.tooltip {
+			pointer-events:none; /*let mouse events pass through*/
+			opacity:1;
+			transition: opacity 0.3s;
+			-moz-border-radius: 8px;
+			border-radius: 8px;
+			border: 4px ridge #e0e0e0;	
+			padding: 5px;	
+			float:left;
+			display:block;
+		}
+		  
+		td, th {
+			font-size:14px;
+			font-family:'Arial';
+		}		  
+	</style>    
+
+</defs>
+	
+<script language="Javascript">//<![CDATA[	
+	function showInfo(id, value, xtranslate, ytranslate, bgcolor) {
+		var tip_id = id + "_tip";
+		var style_id = tip_id + "_div";
+		if (bgcolor == '#ffffff' || !bgcolor) {
+			bgcolor = '#e0e0e0';
+		} 
+		
+		// Set tooltip position and background color.  Tooltips are part of the SVG. 
+		thisObj = document.getElementById(tip_id);
+		styleObj = document.getElementById(style_id);
+		if (value == 1) {
+			thisObj.setAttribute("style", "opacity:1");
+			var style = "background-color:" + bgcolor;
+			styleObj.setAttribute("style", style);
+			var translatevalue = "translate(" + xtranslate + ", " + ytranslate + ")";
+			thisObj.setAttribute("transform", translatevalue);
+		// Turn bubble off and reposition back out of the way
+		}else {
+			thisObj.setAttribute("style", "opacity:0");
+			thisObj.setAttribute("transform", "translate(-2500,-2500)");
+		} 
+	}
+	// Go to a link
+	function doLink(href) {
+		location.href = href;
+	}
+//]]>
+</script>
+
+
+
+<!-- Left side -->
+<g id="wrapper_left_pin1" transform="translate(450 20)">
+	<rect  
+		class="str0" 
+		x="1" 
+		y="34" 
+		rx="1"
+		ry="1"
+		width="20" 
+		height="12" 
+		id="left_pin1" 
+		style="fill:#ffffff;fill-opacity:1;stroke-dasharray: 6 4;stroke-width:1"
+		onmouseenter="showInfo(id, '1', '502', '20', '#ffffff')"
+		onmouseout="showInfo(id, '0')"
+		
+	/> 
+	<text id="number_text_1" x="26" y="44" class="header_font" >1</text>
+	<text id="number_text_1" x="-6" y="44" class="pin_name_font" style="text-anchor: end;">VDD</text>
+</g>
+
+<!-- Right side -->
+<g id="wrapper_right_pin1" transform="translate(450 20)">
+	<rect  
+		class="str0" 
+		x="106.666666666667" 
+		y="34" 
+		rx="1"
+		ry="1"
+		width="20" 
+		height="12" 
+		id="right_pin1" 
+		style="fill:#ffffff;fill-opacity:1;stroke-dasharray: 6 4;stroke-width:1"
+		onmouseenter="showInfo(id, '1', '606.666666666667', '20', '#ffffff')"
+		onmouseout="showInfo(id, '0')"
+		
+	/> 
+	<text id="number_text_8" x="100.666666666667" y="44" class="header_font" style="text-anchor: end;" >8</text>
+	<text id="number_text_8" x="132.666666666667" y="44" class="pin_name_font"> VREFIO</text>
+</g>
+
+
+
+<!-- Left side -->
+<g id="wrapper_left_pin2" transform="translate(450 20)">
+	<rect  
+		class="str0" 
+		x="1" 
+		y="58" 
+		rx="1"
+		ry="1"
+		width="20" 
+		height="12" 
+		id="left_pin2" 
+		style="fill:#ffffff;fill-opacity:1;stroke-dasharray: 6 4;stroke-width:1"
+		onmouseenter="showInfo(id, '1', '502', '20', '#ffffff')"
+		onmouseout="showInfo(id, '0')"
+		
+	/> 
+	<text id="number_text_2" x="26" y="68" class="header_font" >2</text>
+	<text id="number_text_2" x="-6" y="68" class="pin_name_font" style="text-anchor: end;">VOUT</text>
+</g>
+
+<!-- Right side -->
+<g id="wrapper_right_pin2" transform="translate(450 20)">
+	<rect  
+		class="str0" 
+		x="106.666666666667" 
+		y="58" 
+		rx="1"
+		ry="1"
+		width="20" 
+		height="12" 
+		id="right_pin2" 
+		style="fill:#ffffff;fill-opacity:1;stroke-dasharray: 6 4;stroke-width:1"
+		onmouseenter="showInfo(id, '1', '606.666666666667', '20', '#ffffff')"
+		onmouseout="showInfo(id, '0')"
+		
+	/> 
+	<text id="number_text_7" x="100.666666666667" y="68" class="header_font" style="text-anchor: end;" >7</text>
+	<text id="number_text_7" x="132.666666666667" y="68" class="pin_name_font"> SDIN/SDA</text>
+</g>
+
+
+
+<!-- Left side -->
+<g id="wrapper_left_pin3" transform="translate(450 20)">
+	<rect  
+		class="str0" 
+		x="1" 
+		y="82" 
+		rx="1"
+		ry="1"
+		width="20" 
+		height="12" 
+		id="left_pin3" 
+		style="fill:#ffffff;fill-opacity:1;stroke-dasharray: 6 4;stroke-width:1"
+		onmouseenter="showInfo(id, '1', '502', '20', '#ffffff')"
+		onmouseout="showInfo(id, '0')"
+		
+	/> 
+	<text id="number_text_3" x="26" y="92" class="header_font" >3</text>
+	<text id="number_text_3" x="-6" y="92" class="pin_name_font" style="text-anchor: end;">AGND</text>
+</g>
+
+<!-- Right side -->
+<g id="wrapper_right_pin3" transform="translate(450 20)">
+	<rect  
+		class="str0" 
+		x="106.666666666667" 
+		y="82" 
+		rx="1"
+		ry="1"
+		width="20" 
+		height="12" 
+		id="right_pin3" 
+		style="fill:#ffffff;fill-opacity:1;stroke-dasharray: 6 4;stroke-width:1"
+		onmouseenter="showInfo(id, '1', '606.666666666667', '20', '#ffffff')"
+		onmouseout="showInfo(id, '0')"
+		
+	/> 
+	<text id="number_text_6" x="100.666666666667" y="92" class="header_font" style="text-anchor: end;" >6</text>
+	<text id="number_text_6" x="132.666666666667" y="92" class="pin_name_font"> <tspan text-decoration="overline">SYNC</tspan>/A0</text>
+</g>
+
+
+
+<!-- Left side -->
+<g id="wrapper_left_pin4" transform="translate(450 20)">
+	<rect  
+		class="str0" 
+		x="1" 
+		y="106" 
+		rx="1"
+		ry="1"
+		width="20" 
+		height="12" 
+		id="left_pin4" 
+		style="fill:#ffffff;fill-opacity:1;stroke-dasharray: 6 4;stroke-width:1"
+		onmouseenter="showInfo(id, '1', '502', '20', '#ffffff')"
+		onmouseout="showInfo(id, '0')"
+		
+	/> 
+	<text id="number_text_4" x="26" y="116" class="header_font" >4</text>
+	<text id="number_text_4" x="-6" y="116" class="pin_name_font" style="text-anchor: end;">SPI2C</text>
+</g>
+
+<!-- Right side -->
+<g id="wrapper_right_pin4" transform="translate(450 20)">
+	<rect  
+		class="str0" 
+		x="106.666666666667" 
+		y="106" 
+		rx="1"
+		ry="1"
+		width="20" 
+		height="12" 
+		id="right_pin4" 
+		style="fill:#ffffff;fill-opacity:1;stroke-dasharray: 6 4;stroke-width:1"
+		onmouseenter="showInfo(id, '1', '606.666666666667', '20', '#ffffff')"
+		onmouseout="showInfo(id, '0')"
+		
+	/> 
+	<text id="number_text_5" x="100.666666666667" y="116" class="header_font" style="text-anchor: end;" >5</text>
+	<text id="number_text_5" x="132.666666666667" y="116" class="pin_name_font"> SCLK/SCL</text>
+</g>
+
+
+
+
+
+<g id="pin_body" transform="translate(450 20)">
+
+	<circle 
+		cx="15"  
+		cy="15"  
+		r="5"  
+		style="fill:none; stroke-width:1; stroke:black;" 
+		id="pin_body_locator" 
+	/> 
+
+	<rect
+		class="str1"
+		x="0"
+		y="0"
+		width="126.666666666667"
+		height="152"
+		rx="10"
+		ry="10"
+		id="pin_body_rectangle"
+		style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"  
+	/>
+	
+	<!-- Not to scale -->
+	<text id="not_to_scale" x="0" y="162" class="header_font">Not to scale</text>
+
+</g>
+
+
+
+<!-- Tooltips-->
+
+<g id="left_pin1_tip" transform="translate(-2500,-2500)" style="opacity:0;">
+	<foreignObject x="0" y="0" width="100%" height="100%" >
+ 		<body xmlns="http://www.w3.org/1999/xhtml">
+ 			<div class="tooltip" id="left_pin1_tip_div">
+     			<div>
+					<table cellspacing='4'>
+<tr><td valign='top'><b>Pin Number:</b></td><td valign='top'>1</td></tr>
+<tr><td valign='top'><b>Pin Name:</b></td><td valign='top'>VDD</td></tr>
+<tr><td valign='top'><b>Type:</b></td><td valign='top'>Power</td></tr>
+<tr><td valign='top'><b>Description:</b></td><td valign='top'>Analog supply voltage (2.7 V to<br/>5.5 V)</td></tr>
+</table>
+
+     			</div>
+			</div>
+    	</body>
+  	</foreignObject>
+</g>
+
+<g id="right_pin1_tip" transform="translate(-2500,-2500)" style="opacity:0;">
+	<foreignObject x="0" y="0" width="100%" height="100%" >
+ 		<body xmlns="http://www.w3.org/1999/xhtml">
+ 			<div class="tooltip" id="right_pin1_tip_div">
+     			<div>
+					<table cellspacing='4'>
+<tr><td valign='top'><b>Pin Number:</b></td><td valign='top'>8</td></tr>
+<tr><td valign='top'><b>Pin Name:</b></td><td valign='top'>VREFIO</td></tr>
+<tr><td valign='top'><b>Type:</b></td><td valign='top'>Input/output</td></tr>
+<tr><td valign='top'><b>Description:</b></td><td valign='top'>When using the internal reference,<br/>this pin is the reference output<br/>voltage pin (default). Reference<br/>input to the device when operating<br/>with external reference.</td></tr>
+</table>
+
+     			</div>
+			</div>
+    	</body>
+  	</foreignObject>
+</g>
+
+<g id="left_pin2_tip" transform="translate(-2500,-2500)" style="opacity:0;">
+	<foreignObject x="0" y="0" width="100%" height="100%" >
+ 		<body xmlns="http://www.w3.org/1999/xhtml">
+ 			<div class="tooltip" id="left_pin2_tip_div">
+     			<div>
+					<table cellspacing='4'>
+<tr><td valign='top'><b>Pin Number:</b></td><td valign='top'>2</td></tr>
+<tr><td valign='top'><b>Pin Name:</b></td><td valign='top'>VOUT</td></tr>
+<tr><td valign='top'><b>Type:</b></td><td valign='top'>Output</td></tr>
+<tr><td valign='top'><b>Description:</b></td><td valign='top'>Analog output voltage from the DAC</td></tr>
+</table>
+
+     			</div>
+			</div>
+    	</body>
+  	</foreignObject>
+</g>
+
+<g id="right_pin2_tip" transform="translate(-2500,-2500)" style="opacity:0;">
+	<foreignObject x="0" y="0" width="100%" height="100%" >
+ 		<body xmlns="http://www.w3.org/1999/xhtml">
+ 			<div class="tooltip" id="right_pin2_tip_div">
+     			<div>
+					<table cellspacing='4'>
+<tr><td valign='top'><b>Pin Number:</b></td><td valign='top'>7</td></tr>
+<tr><td valign='top'><b>Pin Name:</b></td><td valign='top'>SDIN/<br/>SDA</td></tr>
+<tr><td valign='top'><b>Type:</b></td><td valign='top'>Input/output</td></tr>
+<tr><td valign='top'><b>Description:</b></td><td valign='top'>SPI mode: Serial interface data<br/>input. Data are clocked into the<br/>input shift register on each<br/>falling edge of the SCLK pin.<br/>I<sup>2</sup>C mode: Data are<br/>clocked into or out of the input<br/>register. This pin is a<br/>bidirectional, SDA drain data line<br/>that must be connected to the<br/>supply voltage with an external<br/>pullup resistor.</td></tr>
+</table>
+
+     			</div>
+			</div>
+    	</body>
+  	</foreignObject>
+</g>
+
+<g id="left_pin3_tip" transform="translate(-2500,-2500)" style="opacity:0;">
+	<foreignObject x="0" y="0" width="100%" height="100%" >
+ 		<body xmlns="http://www.w3.org/1999/xhtml">
+ 			<div class="tooltip" id="left_pin3_tip_div">
+     			<div>
+					<table cellspacing='4'>
+<tr><td valign='top'><b>Pin Number:</b></td><td valign='top'>3</td></tr>
+<tr><td valign='top'><b>Pin Name:</b></td><td valign='top'>AGND</td></tr>
+<tr><td valign='top'><b>Type:</b></td><td valign='top'>Ground</td></tr>
+<tr><td valign='top'><b>Description:</b></td><td valign='top'>Ground reference point for all<br/>circuitry on the device.</td></tr>
+</table>
+
+     			</div>
+			</div>
+    	</body>
+  	</foreignObject>
+</g>
+
+<g id="right_pin3_tip" transform="translate(-2500,-2500)" style="opacity:0;">
+	<foreignObject x="0" y="0" width="100%" height="100%" >
+ 		<body xmlns="http://www.w3.org/1999/xhtml">
+ 			<div class="tooltip" id="right_pin3_tip_div">
+     			<div>
+					<table cellspacing='4'>
+<tr><td valign='top'><b>Pin Number:</b></td><td valign='top'>6</td></tr>
+<tr><td valign='top'><b>Pin Name:</b></td><td valign='top'><span style="text-decoration:overline">SYNC</span>/A0</td></tr>
+<tr><td valign='top'><b>Type:</b></td><td valign='top'>Input</td></tr>
+<tr><td valign='top'><b>Description:</b></td><td valign='top'>SPI mode: Active low serial data<br/>enable. This input is the frame<br/>synchronization signal for the<br/>serial data. When the signal goes<br/>low, the serial interface input<br/>shift register is enabled.<br/>I<sup>2</sup>C mode:<br/>Four-state address input 0.</td></tr>
+</table>
+
+     			</div>
+			</div>
+    	</body>
+  	</foreignObject>
+</g>
+
+<g id="left_pin4_tip" transform="translate(-2500,-2500)" style="opacity:0;">
+	<foreignObject x="0" y="0" width="100%" height="100%" >
+ 		<body xmlns="http://www.w3.org/1999/xhtml">
+ 			<div class="tooltip" id="left_pin4_tip_div">
+     			<div>
+					<table cellspacing='4'>
+<tr><td valign='top'><b>Pin Number:</b></td><td valign='top'>4</td></tr>
+<tr><td valign='top'><b>Pin Name:</b></td><td valign='top'>SPI2C</td></tr>
+<tr><td valign='top'><b>Type:</b></td><td valign='top'>Input</td></tr>
+<tr><td valign='top'><b>Description:</b></td><td valign='top'>Interface select pin. Digital<br/>interface in SPI mode if SPI2C = 0<br/>Digital interface in<br/>I<sup>2</sup>C mode if SPI2C =<br/>1 SPI2C pin must be kept static<br/>after device powers up.</td></tr>
+</table>
+
+     			</div>
+			</div>
+    	</body>
+  	</foreignObject>
+</g>
+
+<g id="right_pin4_tip" transform="translate(-2500,-2500)" style="opacity:0;">
+	<foreignObject x="0" y="0" width="100%" height="100%" >
+ 		<body xmlns="http://www.w3.org/1999/xhtml">
+ 			<div class="tooltip" id="right_pin4_tip_div">
+     			<div>
+					<table cellspacing='4'>
+<tr><td valign='top'><b>Pin Number:</b></td><td valign='top'>5</td></tr>
+<tr><td valign='top'><b>Pin Name:</b></td><td valign='top'>SCLK/<br/>SCL</td></tr>
+<tr><td valign='top'><b>Type:</b></td><td valign='top'>Input</td></tr>
+<tr><td valign='top'><b>Description:</b></td><td valign='top'>Serial interface clock. SPI or<br/>I<sup>2</sup>C mode.</td></tr>
+</table>
+
+     			</div>
+			</div>
+    	</body>
+  	</foreignObject>
+</g>
+
+
+
+
+</svg>
