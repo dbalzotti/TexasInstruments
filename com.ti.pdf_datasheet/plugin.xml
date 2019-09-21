@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plugin id="com.ti.pdf_datasheet">
+    <require plugin="org.dita.pdf2"/>
+    <feature extension="dita.conductor.transtype.check" value="com.ti.pdf_datasheet"/>
+    <feature extension="dita.transtype.print" value="com.ti.pdf_datasheet"/>
+    <feature extension="dita.conductor.target.relative" file="integrator.xml"/>
+	<feature extension="dita.conductor.html.param" file="htmlParams.xml"/>
+</plugin> 

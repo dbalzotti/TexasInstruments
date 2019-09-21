@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project name="com.ti.pdf_datasheet">
+    <target name="dita2com.ti.pdf_datasheet.init">
+        <property name="customization.dir" location="${dita.plugin.com.ti.pdf_datasheet.dir}/cfg"/>
+		<property name="full.customization.dir" location="${customization.dir}" />
+        <property name="args.rellinks" value="nofamily"/>
+        <property name="pdf.formatter" value="ah"/>
+    </target>
+    <target name="dita2com.ti.pdf_datasheet" depends="dita2com.ti.pdf_datasheet.init, dita2pdf2"/>
+    
+    
+</project>

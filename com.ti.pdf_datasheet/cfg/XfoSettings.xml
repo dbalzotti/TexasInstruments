@@ -1,0 +1,34 @@
+<?xml version="1.0"?><!-- XSL Formatter V4.2 MR4 (4,2,2008,0111) for Windows Copyright (c) 1999-2008 Antenna House, Inc. -->
+<formatter-config>
+    <formatter-settings default-page-width="8.5in" default-page-height="11in"
+        default-font-size="10pt" normal-line-height="1.2" default-color="#000000"
+        border-thin-width="1pt" border-medium-width="3pt" border-thick-width="5pt" pxpi="96"
+        default-lang="" default-CJK="jpn" pair-kerning="false" latin-ligature="false"
+        punctuation-trim="true" text-autospace="true" fixed-width-space-treatment="true"
+        thin-space-width="0.2" hair-space-width="0.1" vertical-underline-side="auto"
+        punctuation-spacing="0.5" text-autospace-width="0.25" table-auto-layout-limit="100"
+        default-from-page-master-region="false" text-kashida-space="1" two-pass-formatting="false"
+        table-is-reference-area="false" SVGViewer="false" MathPlayer="false" WindowsFontAPI=""
+        HyphenationOption="true" PrinterOrientation="auto" PscriptPassThrough="true"
+        printer-marks-line-length="28.3465pt" printer-marks-zero-margin="8.50394pt"/>
+    <pdf-settings pdf-version="PDF1.4" tagged-pdf="false"
+        default-output-intent="#OutputConditionIdentifier=CGATS TR 001" error-on-pdfx-fault="true"
+        embed-all-fonts="true" error-on-embed-fault="true" error-on-missing-glyph="false"
+        encryption-level="128" printing-allowed="high-resolution" no-changing="false"
+        no-content-copying="false" no-adding-or-changing-comments="false" no-fill-form="false"
+        no-accessibility="false" no-assemble-doc="false" image-compression="auto" jpeg-quality="80"
+        image-downsampling="none" image-downsampling-target-dpi="72"
+        image-downsampling-above-dpi="108" image-color-profile="true" grayscale-compression="auto"
+        grayscale-jpeg-quality="80" grayscale-downsampling="none"
+        grayscale-downsampling-target-dpi="72" grayscale-downsampling-above-dpi="108"
+        monochrome-compression="ccitt4" monochrome-downsampling="none"
+        monochrome-downsampling-target-dpi="300" monochrome-downsampling-above-dpi="450"
+        text-and-lineart-compression="true" use-launch-for-relative-uri="true" rgb-conversion="none"
+        rasterize-resolution="108" page-labels="true" gif-pass-through="true" linearized="false"
+        signature="false"/>
+    <font-settings default-font-family="sans-serif" use-windows-api="false" missing-font="1"
+        missing-glyph="1" missing-glyph-all="false"> </font-settings>
+    <text-settings/>
+    <xslt-settings msxml="true"/>
+    <rxe-settings/>
+</formatter-config>

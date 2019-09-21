@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<font-mappings>
+
+  <font-table>
+
+<!--
+    <aliases>
+      <alias name="Sans">Normal</alias>
+    </aliases>
+-->
+    <aliases>
+      <alias name="Courier">Monospaced</alias>
+    </aliases>
+
+    <logical-font name="Sans">
+      <physical-font char-set="default">
+        <font-face>Arial Unicode MS, Arial, sans-serif</font-face>
+      </physical-font>
+      <physical-font char-set="Greek">
+        <font-face>Arial</font-face>
+      </physical-font>
+      <physical-font char-set="Simplified Chinese">
+        <font-face>SimHei</font-face>
+      </physical-font>
+      <physical-font char-set="Japanese">
+        <font-face>KozMinProVI-Regular</font-face>
+      </physical-font>
+      <physical-font char-set="Korean">
+        <font-face>Gulim</font-face>
+      </physical-font>
+      <physical-font char-set="Hebrew">
+        <font-face>Arial</font-face>
+      </physical-font>
+      <physical-font char-set="Symbols">
+        <font-face>ZapfDingbats</font-face>
+      </physical-font>
+      <physical-font char-set="SubmenuSymbol">
+        <font-face>ZapfDingbats</font-face>
+      </physical-font>
+      <physical-font char-set="SymbolsSuperscript">
+        <!--<font-face>Helvetica</font-face>-->
+        <font-face>Arial Unicode MS, Arial, sans-serif</font-face>
+        <baseline-shift>20%</baseline-shift>
+        <override-size>smaller</override-size>
+      </physical-font>
+    </logical-font>
+
+
+    <logical-font name="Serif">
+      <physical-font char-set="default">
+        <font-face>Times</font-face>
+      </physical-font>
+      <physical-font char-set="Simplified Chinese">
+        <font-face>SimSun</font-face>
+      </physical-font>
+      <physical-font char-set="Japanese">
+        <font-face>KozMinProVI-Regular</font-face>
+      </physical-font>
+      <physical-font char-set="Korean">
+        <font-face>Batang</font-face>
+      </physical-font>
+      <physical-font char-set="Hebrew">
+        <font-face>Times</font-face>
+      </physical-font>
+      <physical-font char-set="Symbols">
+        <font-face>ZapfDingbats</font-face>
+      </physical-font>
+      <physical-font char-set="SubmenuSymbol">
+        <font-face>ZapfDingbats</font-face>
+      </physical-font>
+      <physical-font char-set="SymbolsSuperscript">
+        <font-face>Times</font-face>
+        <baseline-shift>20%</baseline-shift>
+        <override-size>smaller</override-size>
+      </physical-font>
+    </logical-font>
+
+    <logical-font name="Monospaced">
+      <physical-font char-set="default">
+        <font-face>Courier</font-face>
+      </physical-font>
+      <physical-font char-set="Simplified Chinese">
+        <font-face>SimHei</font-face>
+      </physical-font>
+      <physical-font char-set="Japanese">
+        <font-face>KozMinProVI-Regular</font-face>
+      </physical-font>
+      <physical-font char-set="Korean">
+        <font-face>Gulim</font-face>
+      </physical-font>
+      <physical-font char-set="Hebrew">
+        <font-face>FrankRuehl</font-face>
+      </physical-font>
+      <physical-font char-set="Symbols">
+        <font-face>ZapfDingbats</font-face>
+      </physical-font>
+      <physical-font char-set="SymbolsSuperscript">
+        <font-face>Courier</font-face>
+        <baseline-shift>20%</baseline-shift>
+        <override-size>smaller</override-size>
+      </physical-font>
+    </logical-font>
+  </font-table>
+
+</font-mappings>
